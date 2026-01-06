@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Kleen Events Machakos - Portable Toilets in Kenya</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+               <a href="index.html" class="logo">
+          <img
+            src="Kleen Events favicon.webp"
+            alt="Kleen Events favicon logo"
+            class="logo-img"
+          />
+        </a>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul id="mainMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="index.html#pricing">Pricing</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Our Gallery</h1>
+            <p>See our portable toilets in action.   
+                <br> Quality, cleanliness, and professionalism in every project.</p>
+            <a href="index.html#contact" class="btn">Book Our Services</a>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Work Gallery</h2>
+                <p>Browse through our collection of portable toilets deployed at various events and locations</p>
+            </div>
+            
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="standard">Standard Toilets</button>
+                <button class="filter-btn" data-filter="vip">VIP Trailers</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+                <button class="filter-btn" data-filter="construction">Construction Sites</button>
+                <button class="filter-btn" data-filter="special">Special Needs</button>
+            </div>
+            
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Standard Toilets -->
+                <div class="gallery-item" data-category="standard">
+                    <img src="image - 2026-01-06T064431.557.webp" alt="Standard Portable Toilet">
+                    <div class="gallery-caption">
+                        <h4>Standard Portable Toilet</h4>
+                        <p>Clean and well-maintained for any event</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="standard">
+                    <img src="image - 2026-01-06T064536.038.webp" alt="Portable Toilet Setup">
+                    <div class="gallery-caption">
+                        <h4>Event Setup</h4>
+                        <p>Multiple units placed for large gatherings</p>
+                    </div>
+                </div>
+                
+                <!-- VIP Trailers -->
+                <div class="gallery-item" data-category="vip">
+                    <img src="kleen events vip exterior2.webp" alt="VIP Toilet Trailer">
+                    <div class="gallery-caption">
+                        <h4>VIP Toilet Trailer</h4>
+                        <p>Luxury facilities for upscale events</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="vip">
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=50" alt="VIP Interior">
+                    <div class="gallery-caption">
+                        <h4>VIP Interior</h4>
+                        <p>Premium amenities and cleanliness</p>
+                    </div>
+                </div>
+                
+                <!-- Events -->
+                <div class="gallery-item" data-category="events">
+                    <img src="kleen events magari.webp" alt="Wedding Event">
+                    <div class="gallery-caption">
+                        <h4>Wedding Event</h4>
+                        <p>Portable toilets for elegant weddings</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="events">
+                    <img src="kleen events vip exterior.webp" alt="Corporate Function">
+                    <div class="gallery-caption">
+                        <h4>Corporate Function</h4>
+                        <p>Professional setup for business events</p>
+                    </div>
+                </div>
+                
+                <!-- Construction Sites -->
+                <div class="gallery-item" data-category="construction">
+                    <img src="kleen events godown.webp" alt="Construction Site">
+                    <div class="gallery-caption">
+                        <h4>Construction Site</h4>
+                        <p>Durable toilets for work environments</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="construction">
+                    <img src="kleen events showground.webp" alt="Site Setup">
+                    <div class="gallery-caption">
+                        <h4>Site Setup</h4>
+                        <p>Multiple units for large construction projects</p>
+                    </div>
+                </div>
+                
+                <!-- Special Needs -->
+                <div class="gallery-item" data-category="special">
+                    <img src="kleen events women interior.webp" alt="Accessible Toilet">
+                    <div class="gallery-caption">
+                        <h4>Accessible Toilet</h4>
+                        <p>Designed for elderly and special needs</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="special">
+                    <img src="kleen event vip.webp" alt="Indoor Special Toilet">
+                    <div class="gallery-caption">
+                        <h4>Indoor Special Toilet</h4>
+                        <p>For post-surgery and limited mobility</p>
+                    </div>
+                </div>
+                
+                <!-- More Event Examples -->
+                <div class="gallery-item" data-category="events">
+                    <img src="kleen toilets 4 sky blue.webp" alt="Outdoor Festival">
+                    <div class="gallery-caption">
+                        <h4>Outdoor Festival</h4>
+                        <p>Multiple units for large public gatherings</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="events">
+                    <img src="kleen events lorry event.webp" alt="Music Concert">
+                    <div class="gallery-caption">
+                        <h4>Music Concert</h4>
+                        <p>High-capacity setup for entertainment events</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="no-results" id="noResults">
+                <h3>No images found for this category</h3>
+                <p>Please select another category or view all images</p>
+            </div>
+            
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="index.html#contact" class="btn">Book Similar Setup for Your Event</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Client Testimonials</h2>
+                <p>See what our satisfied customers say about our services</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Kleen Events provided portable toilets for our wedding in Nairobi. The VIP trailers were spotless and our guests were very impressed. Professional service from start to finish!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SM</div>
+                        <div class="author-info">
+                            <h4>Sarah Mumbua</h4>
+                            <p>Wedding Client, Nairobi</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"We've been using Kleen Events for our construction sites in Machakos for over a year. Reliable, clean, and always on time. Their attendants maintain excellent hygiene standards."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JM</div>
+                        <div class="author-info">
+                            <h4>James Musyoka</h4>
+                            <p>Construction Manager, Machakos</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="testimonial-text">"The special needs toilet for my elderly mother has been a game-changer. It's sturdy, easy to clean, and gives her independence. Thank you Kleen Events!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MW</div>
+                        <div class="author-info">
+                            <h4>Mary Wanjiru</h4>
+                            <p>Family Client, Kiambu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-close" id="lightboxClose">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="lightbox-nav">
+            <div class="lightbox-prev" id="lightboxPrev">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="lightbox-next" id="lightboxNext">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </div>
+        <div class="lightbox-content">
+            <img id="lightboxImage" src="" alt="">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Kleen <span>Events</span></h3>
+                    <p>Providing clean, reliable, and affordable portable toilet solutions across Kenya for events, construction sites, and outdoor gatherings.</p>
+                    
+                    <div class="social-links">
+                        <a href="https://web.facebook.com/kleen.kleen.792/?_rdc=1&_rdr#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/254712000222?text=Hello%20Kleen%20Events,%20I%20want%20portable%20toilets%20services"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="index.html#pricing">Pricing</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="index.html#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Standard Portable Toilets</a></li>
+                        <li><a href="services.html">VIP Toilet Trailers</a></li>
+                        <li><a href="services.html">Special Needs Toilets</a></li>
+                        <li><a href="services.html">Long-term Hire</a></li>
+                        <li><a href="services.html">Toilets for Sale</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-phone" style="margin-right: 10px;"></i><a href="tel:+254712000222"> +254 712 000 222</a></li>
+                        <li><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i><a href="https://maps.app.goo.gl/ajwKNEivJe326JjE9"> Machakos, Kenya</a></li>
+                        <li><i class="fas fa-user" style="margin-right: 10px;"></i> <a href="https://www.linkedin.com/in/peter-masai-615176198/?originalSubdomain=ke">Peter Masai, CEO</a></li>
+                        <li><a href="https://maps.app.goo.gl/ajwKNEivJe326JjE9" target="_blank">View Location on Map</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+           
+              <div class="copyright">
+                <p>&copy; <span id="y"></span> Kleen Events Machakos. All rights reserved. | Professional portable toilet hire services in Kenya. |<a href="#" style="color:rgb(47, 255, 158);">Privacy Policy</a> | <a href="#" style="color:rgb(47, 255, 158);">Terms of Service</a></p>
+              <script>document.getElementById("y").textContent=new Date().getFullYear()</script>
+
+          <p style="margin: 0; font-size: 13px; color: #777">
+            Crafted with <span style="color: red">❤</span> by
+            <a
+              href="https://sarahadevelopers.co.ke"
+              target="_blank"
+              rel="noopener"
+              style="color: orange; text-decoration: none; font-weight: 500"
+            >
+              Saraha Developers Ltd.
+            </a>
+          </p>
+            </div>
+        </div>
+    </footer>
+    <a
+  href="https://wa.me/254712000222?text=Hello%20Kleen%20Events,%20I%20want%20portable%20toilets%20services"
+  class="whatsapp-float"
+  target="_blank"
+  aria-label="Chat on WhatsApp"
+>
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+    alt="WhatsApp"
+  />
+</a>
+
+
+    <script src="gallery.js">
+      
+    </script>
+</body>
+</html>
