@@ -1004,6 +1004,7 @@
             
             .hero {
                 padding: 150px 0 80px;
+                height: 100vh;
             }
             
             .hero h1 {
@@ -1021,7 +1022,7 @@
             
             .btn {
                 width: 100%;
-                max-width: 300px;
+                max-width: 210px;
             }
         }
         
