@@ -16,6 +16,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            max-width: 100%;
         }
         
         html {
@@ -117,73 +118,97 @@
         }
         
         /* Header */
-        header {
-            background-color:transparent;
-            
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-        
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 0;
-        }
-        
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-        
-        .logo-icon {
-            color: var(--emerald);
-            font-size: 2.2rem;
-            margin-right: 10px;
-        }
-        
-        .logo-text {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--black);
-        }
-        
-        .logo-text span {
-            color: var(--emerald);
-        }
-        
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-        
-        nav ul li {
-            margin-left: 30px;
-        }
-        
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            font-weight: 500;
-            font-size: 1.1rem;
-            transition: color 0.3s ease;
-        }
-        
-        nav ul li a:hover {
-            color: var(--emerald);
-        }
-        
-        .mobile-menu-btn {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 1.8rem;
-            color: var(--emerald);
-            cursor: pointer;
-        }
-        
+            /* ================= HEADER ================= */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;                 /* standard navbar height */
+  background-color: transparent;
+  z-index: 1000;
+}
+
+/* Header inner container */
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ================= LOGO ================= */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 500;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.03);
+}
+
+.logo span {
+  color: #00e6a4;
+}
+
+.logo i {
+  color: var(--emerald);
+}
+
+/* LOGO IMAGE — FIXED SIZE */
+.logo img {
+  height: 300px;       /* 👈 VERY IMPORTANT */
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* ================= NAV ================= */
+
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+nav ul li {
+  margin-left: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1.05rem;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--emerald);
+}
+
+/* ================= MOBILE BUTTON ================= */
+
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: var(--emerald);
+  cursor: pointer;
+}
         /* Hero Section */
         .hero {
             background: linear-gradient(rgba(0, 0, 0, 0.979), rgba(0, 0, 0, 0.884)), url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
@@ -284,18 +309,27 @@
             gap: 50px;
         }
         
-        .about-img {
-            flex: 1;
-            height: 400px;
-            background-color: var(--gray-light);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--emerald);
-            font-size: 5rem;
-        }
-        
+      .about-img {
+  flex: 1;
+  height: 420px;
+  border-radius: 12px;
+  overflow: hidden;                /* VERY IMPORTANT */
+  background-color: var(--gray-light);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Image itself */
+.about-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;               /* KEY: fills nicely */
+  object-position: center;         /* keeps face centered */
+  display: block;
+}
+
         .about-content {
             flex: 1;
         }
@@ -816,7 +850,7 @@
 }
 
 .hero-text h1 span::after {
-  content: "Software";
+  content: "Kleen Events";
   position: absolute;
   inset: 0;
   color: #02f7b1;
