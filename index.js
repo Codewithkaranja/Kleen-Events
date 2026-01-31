@@ -59,7 +59,32 @@
                 }
             });
         });
-        
+        // =========================
+// Service Areas Swiper
+// =========================
+const serviceAreasSwiper = new Swiper('.serviceAreasSwiper', {
+  loop: true,
+  spaceBetween: 25,
+  grabCursor: true,
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.serviceAreasSwiper .swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.serviceAreasSwiper .swiper-button-next',
+    prevEl: '.serviceAreasSwiper .swiper-button-prev',
+  },
+  breakpoints: {
+    320: { slidesPerView: 1 },
+    768: { slidesPerView: 2 },
+    1024: { slidesPerView: 3 },
+  },
+});
+
         // Add active class to nav links on scroll
         window.addEventListener('scroll', () => {
             const sections = document.querySelectorAll('section');
